@@ -473,6 +473,12 @@
   input . gsc-input {
     background: url()
   }
+
+
+#google_translate_element{
+  float: right;
+  margin-top: -30px;
+}
 </style>
 <!-- [header] -->
 <header>
@@ -488,6 +494,11 @@
       <div id="mcy-hd-search"> <span class="mcy-search-icon">              <i class="icon-search"></i>            </span>
         <gcse:search></gcse:search>
       </div>
+
+      <!-- [translate] -->
+      <div id="google_translate_element"></div>
+
+
       <script>
         (function() {
           var cx = '010402023890536970566:gds7o7lyltq';
@@ -612,16 +623,18 @@
         $('.mcy-hd').addClass('fixed');
         $('.mcy-icon-home').css("visibility", "visible");
       } else {
-        $('.mcy-hd').removeClass('fixed'); $('.mcy-icon-home').css("visibility", "hidden"); } }); });
+        $('.mcy-hd').removeClass('fixed');
+        $('.mcy-icon-home').css("visibility", "hidden");
+      }
+    });
+  });
 </script>
-<div id="google_translate_element"></div>
 <script type="text/javascript">
   function googleTranslateElementInit() {
     new google.translate.TranslateElement({
       pageLanguage: 'ja',
       includedLanguages: 'en,zh-CN,zh-TW',
-      layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT,
-      multilanguagePage: true
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
     }, 'google_translate_element');
   }
 </script>
