@@ -1,0 +1,629 @@
+<style>
+  @import url(https://dhdg4tktn3ydk.cloudfront.net/FontAwesome.css);
+  body a,
+  body input:focus,
+  body textarea:focus {
+    outline: 0
+  }
+
+  body,
+  body input[type=button],
+  body input[type=submit],
+  body ol,
+  body ul,
+  html {
+    margin: 0
+  }
+
+  body,
+  html {
+    width: 100%
+  }
+
+  body,
+  input[id=search_box] {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Lucida Grande", Verdana, "ＭＳ Ｐゴシック", sans-serif
+  }
+
+  html {
+    padding: 0;
+    height: 100%
+  }
+
+  body {
+    padding: 0;
+    min-height: 100%;
+    word-wrap: break-word;
+    text-rendering: optimizespeed;
+    -moz-font-feature-settings: "liga" 0;
+    -moz-font-feature-settings: "liga=0";
+    -ms-font-feature-settings: "liga" 0;
+    -o-font-feature-settings: "liga" 0;
+    -webkit-font-feature-settings: "liga" 0;
+    font-feature-settings: "liga" 0
+  }
+
+  body::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(0, 0, 0, .1)
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .4)
+  }
+
+  body a {
+    text-decoration: none
+  }
+
+  body a:hover {
+    text-decoration: underline
+  }
+
+  body p {
+    margin: 0 0 10px
+  }
+
+  body p:last-child {
+    margin-bottom: 0
+  }
+
+  body ul {
+    padding: 0;
+    list-style: none
+  }
+
+  body ol {
+    padding: 0
+  }
+
+  body table,
+  body table td,
+  body table th {
+    border-collapse: collapse;
+    padding: 0
+  }
+
+  body img {
+    border: none;
+    max-width: 100%;
+    -ms-interpolation-mode: bicubic
+  }
+
+  body input,
+  body textarea {
+    outline: 0;
+    -moz-font-feature-settings: "liga" 0;
+    -moz-font-feature-settings: "liga=0";
+    -ms-font-feature-settings: "liga" 0;
+    -o-font-feature-settings: "liga" 0;
+    font-feature-settings: "liga" 0
+  }
+
+  body input[type=checkbox],
+  body input[type=radio] {
+    margin: 0;
+    padding: 0;
+    border: none
+  }
+
+  input::-webkit-input-placeholder {
+    line-height: normal
+  }
+
+  input::-moz-placeholder {
+    line-height: normal
+  }
+
+  input:-moz-placeholder {
+    line-height: normal
+  }
+
+  input:-ms-input-placeholder {
+    line-height: normal
+  }
+
+  body article,
+  body aside,
+  body footer,
+  body header,
+  body hgroup,
+  body nav,
+  body section {
+    display: block
+  }
+
+  #mcy-header {
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    background: rgba(255, 255, 255, 1);
+    border-top: 5px solid #4c4c4c;
+    padding-top: 30px
+  }
+
+  #mcy-hd-top {
+    margin: 0 auto;
+    width: 1128px;
+    position: relative
+  }
+
+  #mcy-hd-logo {
+    margin: 0 auto;
+    width: 244px;
+    height: 38px
+  }
+
+  #mcy-hd-search {
+    position: absolute;
+    top: 0;
+    left: 0
+  }
+
+  input[id=search_box] {
+    color: #000;
+    border-color: #fff #fff #000;
+    height: auto;
+    width: 150px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 5px 5px 30px;
+    font-size: 13px;
+    text-align: left
+  }
+
+  .mcy-search-icon {
+    color: #7f7f7f;
+    font-size: 13px;
+    left: 10px;
+    line-height: 100%;
+    margin-top: -8px;
+    position: absolute;
+    top: 50%
+  }
+
+  #mcy-hd-bottom {
+    margin: 0 auto;
+    width: 1128px;
+    position: relative;
+    padding: 20px 0 5px
+  }
+
+  .mcy-dropmenu {
+    list-style-type: none;
+    padding: 0
+  }
+
+  .mcy-dropmenu:after,
+  .mcy-dropmenu:before {
+    content: "";
+    display: table
+  }
+
+  .mcy-dropmenu:after {
+    clear: both
+  }
+
+  .mcy-dropmenu li {
+    position: relative;
+    float: left;
+    margin: 0 22px 0 0;
+    padding: 0;
+    text-align: center
+  }
+
+  .mcy-dropmenu li a,
+  .mcy-dropmenu li span {
+    display: block;
+    line-height: 1;
+    text-decoration: none;
+    color: #4c4c4c;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 10px
+  }
+
+  .mcy-dropmenu li ul {
+    list-style: none;
+    position: absolute;
+    z-index: 9999;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0
+  }
+
+  .mcy-dropmenu li ul li {
+    background-color: rgba(255, 255, 255, .8);
+    margin-left: 0;
+    width: 170px
+  }
+
+  .mcy-dropmenu li ul li a,
+  .mcy-dropmenu li ul li span {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    padding: 5px 10px
+  }
+
+  #mcy-hd-menu li ul {
+    display: none
+  }
+
+  #mcy-hd-menu li:hover ul {
+    display: block
+  }
+
+  li.mcy-icon-home {
+    width: 30px;
+    height: 28px;
+    overflow: hidden;
+    margin-right: 40px
+  }
+
+  .mcy-icon-home a {
+    margin-top: -2px;
+    display: block;
+    width: 26px;
+    height: 18px;
+    background: url(https://d13ucm2atqlvn6.cloudfront.net/62b728fcbcdb483796f73e46b6d39363/images/0fc8ffa7556644688986b4d1a4579fdb.jpg) left 8px no-repeat;
+    background-size: 116px 18px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden
+  }
+
+  #mcy-cart,
+  #mcy-cart a,
+  #mcy-signup {
+    display: inline-block
+  }
+
+  .mcy-hd.fixed {
+    position: fixed;
+    left: 0;
+    top: -85px
+  }
+
+  .mcy-hd-buttons {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    height: auto;
+    width: auto;
+    z-index: 200
+  }
+
+  #recruiting-banner a,
+  #recruiting-banner-bar a {
+    color: #fff;
+    width: 60px;
+    text-align: center;
+    display: block
+  }
+
+  #recruiting-banner,
+  #recruiting-banner-bar {
+    position: fixed;
+    left: 0;
+    background-repeat: no-repeat;
+    z-index: 100;
+    border-radius: 5px
+  }
+
+  #mcy-signup {
+    width: 90px;
+    vertical-align: top;
+    padding: 10px 0 0
+  }
+
+  #mcy-signup a {
+    display: block;
+    background-color: #d7003a;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 7px 0 5px;
+    text-align: center
+  }
+
+  #mcy-cart {
+    padding: 10px 5px 0 8px;
+    vertical-align: top
+  }
+
+  #mcy-cart a {
+    color: #4c4c4c;
+    font-size: 24px
+  }
+
+  #recruiting-banner {
+    top: 150px;
+    background-image: url(https://d37f8t1iuuigqm.cloudfront.net/aff086a425904b078cab148699715627/images/bf58cd761e15478dae2be2a51cf8debb.png);
+    -moz-animation: swing linear 5s infinite;
+    -moz-transform-origin: center -5px 0;
+    -webkit-animation: swing linear 5s infinite;
+    -webkit-transform-origin: center -5px 0;
+    -ms-animation: swing linear 5s infinite;
+    -ms-transform-origin: center -5px 0;
+    -o-animation: swing linear 5s infinite;
+    -o-transform-origin: center -5px 0;
+    animation: swing linear 5s infinite;
+    transform-origin: center -5px 0;
+    display: block;
+    float: left
+  }
+
+  @-moz-keyframes swing {
+    0%,
+    100%,
+    50% {
+      -moz-transform: rotate(0)
+    }
+    25% {
+      -moz-transform: rotate(2deg)
+    }
+    75% {
+      -moz-transform: rotate(-2deg)
+    }
+  }
+
+  @-webkit-keyframes swing {
+    0%,
+    100%,
+    50% {
+      -webkit-transform: rotate(0)
+    }
+    25% {
+      -webkit-transform: rotate(2deg)
+    }
+    75% {
+      -webkit-transform: rotate(-2deg)
+    }
+  }
+
+  @-o-keyframes swing {
+    0%,
+    100%,
+    50% {
+      -o-transform: rotate(0)
+    }
+    25% {
+      -o-transform: rotate(2deg)
+    }
+    75% {
+      -o-transform: rotate(-2deg)
+    }
+  }
+
+  @-ms-keyframes swing {
+    0%,
+    100%,
+    50% {
+      -ms-transform: rotate(0)
+    }
+    25% {
+      -ms-transform: rotate(2deg)
+    }
+    75% {
+      -ms-transform: rotate(-2deg)
+    }
+  }
+
+  @keyframes swing {
+    0%,
+    100%,
+    50% {
+      transform: rotate(0)
+    }
+    25% {
+      transform: rotate(2deg)
+    }
+    75% {
+      transform: rotate(-2deg)
+    }
+  }
+
+  #recruiting-banner a {
+    padding: 101px 0;
+    border-radius: 5px
+  }
+
+  #recruiting-banner a:hover,
+  #recruiting-banner-bar a:hover {
+    opacity: .3;
+    text-decoration: none;
+    background: #d6d6d6
+  }
+
+  #recruiting-banner-bar {
+    top: 143px;
+    background-image: url(https://d37f8t1iuuigqm.cloudfront.net/aff086a425904b078cab148699715627/images/c93d94b525474b5093f69460de069f79.png)
+  }
+
+  #recruiting-banner-bar a {
+    padding: 4px 0;
+    border-radius: 5px
+  }
+
+  #___gcse_0 {
+    width: 200px;
+    margin: 0 auto 0 20px;
+    position: relative
+  }
+
+  .gsc-search-button,
+  .gsib_b {
+    display: none
+  }
+
+  .gsc-input-box {
+    border: none;
+    border-bottom: 1px solid #ddd
+  }
+
+  .gsc-input-box-focus,
+  .gsc-input-box-hover {
+    box-shadow: none;
+    border-bottom: 1px solid #ddd
+  }
+
+  input . gsc-input {
+    background: url()
+  }
+</style>
+<!-- [header] -->
+<header>
+  <div id="mcy-header" class="mcy-hd">
+    <!-- [mcy-hd-top] -->
+    <div id="mcy-hd-top">
+      <!-- [logo] -->
+      <div id="mcy-hd-logo">
+        <a href="http://machi-ya.jp/"> <img src="https://d13ucm2atqlvn6.cloudfront.net/f9554b8f4b4043aa814d5b88db78c138/images/9dc244d8a7af419196114d7eb83643c9.png" alt="machi-ya_logo" style="width: 90%;"> </a>
+      </div>
+      <!-- [/logo] -->
+      <!-- [search] -->
+      <div id="mcy-hd-search"> <span class="mcy-search-icon">              <i class="icon-search"></i>            </span>
+        <gcse:search></gcse:search>
+      </div>
+      <script>
+        (function() {
+          var cx = '010402023890536970566:gds7o7lyltq';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <!-- [/search] -->
+      <script>
+        function marketplaceSignupHandler(e) {
+          e.preventDefault();
+          var global = require('goodsie.global');
+          var $success = $('.js-module-signup-success').hide();
+          var $error = $('.js-module-signup-error').hide();
+          var $email = $('#module-signup-email');
+          var $form = $('#module-signup-form');
+          $.ajax({
+            type: "POST",
+            url: $form.attr('action'),
+            data: {
+              email: $email.val(),
+              csrfmiddlewaretoken: global.csrftoken
+            },
+            dataType: "json",
+            xhrFields: {
+              withCredentials: true
+            },
+            success: function(resp, status, xhr) {
+              $success.html(resp.data.success).show();
+            },
+            error: function(xhr, status, error) {
+              try {
+                resp = $.parseJSON(xhr.responseText);
+                $error.html(resp.form.errors.email).show();
+              } catch (e) {}
+            },
+            beforeSend: function(jxhr, settings) {
+              jxhr.setRequestHeader("X-CSRFToken", global.csrftoken);
+            }
+          });
+        }
+        document.addEventListener('click', function(e) {
+          if (!$ || e.target.id != 'module-signup-submit') {
+            return
+          }
+          return marketplaceSignupHandler(e);
+        });
+        document.addEventListener('keypress', function(e) {
+          if (!$ || e.target.id != 'module-signup-email' || e.keyCode != 13) {
+            return
+          }
+          return marketplaceSignupHandler(e);
+        });
+      </script>
+    </div>
+    <!-- [/mcy-hd-top] -->
+    <!-- [mcy-hd-bottom] -->
+    <!-- [menu] -->
+    <nav id="mcy-hd-bottom">
+      <ul id="mcy-hd-menu" class="mcy-dropmenu">
+        <li class="mcy-icon-home"> <a href="http://machi-ya.jp/">HOME</a> </li>
+        <li> <a href="http://machi-ya.jp/about">ABOUT</a> </li>
+        <li> <a href="http://machi-ya.jp/media">MEDIA</a>
+          <ul>
+            <li> <a href="http://machi-ya.jp/media/gizmodo">GIZMODO</a> </li>
+            <li> <a href="http://machi-ya.jp/media/lifehacker">Lifehacker</a> </li>
+            <li> <span>cafeglobe</span> </li>
+            <li> <a href="http://machi-ya.jp/media/mylohas">MYLOHAS</a> </li>
+            <li> <span>GLITTY</span> </li>
+            <li> <a href="http://machi-ya.jp/media/roomie">roomie</a> </li>
+          </ul>
+        </li>
+        <li> <a href="http://machi-ya.jp/stores">STORES</a> </li>
+        <li> <a href="http://machi-ya.jp/goods">GOODS</a>
+          <ul>
+            <li> <a href="http://machi-ya.jp/goods/lifestyle">ライフスタイル</a> </li>
+            <li> <a href="http://machi-ya.jp/goods/fashion">ファッション</a> </li>
+            <li> <a href="http://machi-ya.jp/goods/stationely">ステーショナリー</a> </li>
+            <li> <a href="http://machi-ya.jp/goods/beauty">ヘルス/ビューティ</a> </li>
+            <li> <a href="http://machi-ya.jp/goods/gadgets">ガジェット/家電</a> </li>
+            <li> <a href="http://machi-ya.jp/goods/food">食品/飲料</a> </li>
+          </ul>
+        </li>
+        <li> <a href="http://machi-ya.jp/jobmatch">JOB MATCH</a> </li>
+        <li> <a href="https://cf.machi-ya.jp/">CROWDFUNDING</a> </li>
+        <li> <a href="http://machi-ya.jp/editors">EDITORS CHOICE</a> </li>
+      </ul>
+      <!-- [/menu] -->
+      <!-- [buttons] -->
+      <div class="mcy-hd-buttons">
+        <!-- [SIGN UP] -->
+        <div id="mcy-signup"> <a href="https://machi-ya.jp/account">MY PAGE</a> </div>
+        <!-- [/SIGN UP] -->
+        <!-- [cart] -->
+        <div id="mcy-cart">
+          <a href="https://machi-ya.jp/cart"> <span class="icon-shopping-cart"></span> </a>
+        </div>
+        <!-- [/cart] -->
+      </div>
+      <!-- [/buttons] -->
+    </nav>
+  </div>
+</header>
+<!-- [recruiting-banner] -->
+<div>
+  <div id="recruiting-banner-bar">
+    <a href="http://machi-ya.jp/entry" target="_blank"></a>
+  </div>
+  <div id="recruiting-banner">
+    <a href="http://machi-ya.jp/entry" target="_blank"></a>
+  </div>
+</div>
+<!-- [/mcy-hd-bottom] -->
+<script>
+  $(function() {
+    $(window).on('load scroll', function() {
+      if ($(window).scrollTop() > 85) {
+        $('.mcy-hd').addClass('fixed');
+        $('.mcy-icon-home').css("visibility", "visible");
+      } else {
+        $('.mcy-hd').removeClass('fixed'); $('.mcy-icon-home').css("visibility", "hidden"); } }); });
+</script>
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'ja',
+      includedLanguages: 'en,zh-CN,zh-TW',
+      layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT,
+      multilanguagePage: true
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- [/header] -->
