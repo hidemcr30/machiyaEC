@@ -1,0 +1,335 @@
+<style>
+  /* ---------------------------------------------------- フッター ----------------------------------------------------- */
+
+  #mcy-footer {
+    border-top: 1px solid #ccc;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #222;
+  }
+
+  #mcy-footer a {
+    color: #222;
+  }
+
+  #mcy-ft-top {
+    margin: 0 auto;
+    width: 1128px;
+    padding: 20px 0;
+  }
+
+  .mcy-ft-cat1 {
+    float: left;
+    vertical-align: top;
+    width: 220px;
+  }
+
+  .mcy-cat1-title {
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+
+  .mcy-cat1-list a {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+    padding-left: 15px;
+  }
+
+  .mcy-ft-cat2 {
+    float: left;
+    vertical-align: top;
+    width: 160px;
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+  }
+
+  .mcy-cat2-title {
+    font-size: 13px;
+    display: inline-block;
+  }
+
+  .mcy-cat2-list {
+    padding-left: 10px;
+  }
+
+  .mcy-cat2-list a,
+  .mcy-cat2-list span {
+    display: block;
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .mcy-ft-cat3 {
+    float: left;
+    vertical-align: top;
+    width: 385px;
+  }
+
+  #mcy-ft-middle {
+    border-top: 1px solid #ccc;
+    color: #666;
+    font-size: 12px;
+    min-height: 80px;
+  }
+
+  .mcy-ft-wrapper {
+    width: 1128px;
+    margin: 0 auto;
+  }
+
+  #mcy-ft-mm {
+    border-style: dashed;
+    border-width: 0 1px;
+    border-color: #ccc;
+    margin: 0 auto;
+    padding-bottom: 12px;
+    padding-top: 10px;
+    text-align: center;
+    width: 370px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #mcy-ft-mm h3 {
+    color: #333;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Lucida Grande", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    font-weight: normal;
+    margin: 0 0 10px;
+  }
+
+  #mcy-ft-mm input {
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 12px;
+    margin: 0 5px 0 0;
+    padding: 10px;
+    width: 50%;
+    font-family: inherit;
+    font-feature-settings: "liga" off;
+  }
+
+  #mcy-ft-mm a.mcy-mm-btn {
+    background-color: #d7003a;
+    border-radius: 2px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Lucida Grande", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    letter-spacing: 1px;
+    color: #fff;
+    display: inline-block;
+    line-height: 100%;
+    padding: 11px;
+  }
+
+  #mcy-ft-logo {
+    margin: 0 auto;
+    text-align: center;
+    width: 370px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 5px;
+  }
+
+  #mcy-ft-logo img {
+    margin: 0 auto;
+    max-height: 85px;
+  }
+
+  #mcy-ft-sns {
+    border-left: 1px dashed #ccc;
+    border-right: 1px dashed #ccc;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    padding-top: 25px;
+    text-align: center;
+    width: 370px;
+    display: inline-block;
+    vertical-align: top;
+    max-height: 85px;
+  }
+
+  #mcy-ft-sns a {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  #mcy-ft-bottom {
+    background-color: #f7f7f7;
+    letter-spacing: 1px;
+    padding: 20px 0 10px;
+  }
+
+  .mcy-info {
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .mcy-info a {
+    color: #222;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 0 20px 0 0;
+    margin: 0 auto;
+  }
+
+  .mcy-powered {
+    padding: 0 0 20px;
+    text-align: right;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  .clearfix {
+    display: inline-table;
+  }
+  /* Hides from IE-mac \*/
+
+  * html .clearfix {
+    height: 1%;
+  }
+
+  .clearfix {
+    display: block;
+  }
+  /* End hide from IE-mac */
+  /* ----------------------------------------------------      TOPへ戻るボタン     ----------------------------------------------------- */
+
+  #page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 77%;
+    background-image: url("https://d13ucm2atqlvn6.cloudfront.net/f9554b8f4b4043aa814d5b88db78c138/images/49e85d886b734d179bf6ffb93773a55b.png");
+    background-repeat: no-repeat;
+    border-radius: 5px;
+  }
+
+  #page-top a {
+    color: #fff;
+    width: 66px;
+    padding: 30px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+  }
+
+  #page-top a:hover {
+    opacity: 0.5;
+    text-decoration: none;
+    background: #999;
+  }
+</style>
+<!-- [footer] -->
+<div id="mcy-footer">
+  <!-- [mcy-ft-top] -->
+  <div id="mcy-ft-top" class="clearfix">
+    <div class="mcy-ft-cat1">
+      <div class="mcy-cat1-title">CATEGORY</div>
+      <div class="mcy-cat1-list"> <a href="http://machi-ya.jp/stores">STORES</a> <a href="http://machi-ya.jp/jobmatch">JOB MATCH</a> <a href="https://cf.machi-ya.jp/">CROWDFUNDING</a> </div>
+    </div>
+    <div class="mcy-ft-cat2">
+      <div class="mcy-cat2-title"> <a href="http://machi-ya.jp/media">MEDIA</a> </div>
+      <div class="mcy-cat2-list"> <a href="http://machi-ya.jp/media/gizmodo">GIZMODO</a> <a href="http://machi-ya.jp/media/lifehacker">Lifehacker</a> <span>cafeglobe</span> <a href="http://machi-ya.jp/media/mylohas">MYLOHAS</a> <span>GLITTY</span> <a href="http://machi-ya.jp/media/roomie">roomie</a>        </div>
+    </div>
+    <div class="mcy-ft-cat2">
+      <div class="mcy-cat2-title"> <a href="http://machi-ya.jp/goods">GOODS</a> </div>
+      <div class="mcy-cat2-list"> <a href="http://machi-ya.jp/goods/lifestyle">ライフスタイル</a> <a href="http://machi-ya.jp/goods/fashion">ファッション</a> <a href="http://machi-ya.jp/goods/stationely">ステーショナリー</a> <a href="http://machi-ya.jp/goods/beauty">ヘルス/ビューティ</a> <a href="http://machi-ya.jp/goods/gadgets">ガジェット/家電</a>        <a href="http://machi-ya.jp/goods/food">食品/飲料</a> <span></span> </div>
+    </div>
+    <div class="mcy-ft-cat2">
+      <div class="mcy-cat2-title"> <a href="http://machi-ya.jp/entry" class="js-module-nav-nested-list-item-link st-module-nav-nested-list-item-link">ENTRY</a> </div>
+      <div class="mcy-cat2-list"> <a href="http://machi-ya.jp/entry">出店応募はこちら</a> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> </div>
+    </div>
+    <div class="mcy-ft-cat3">
+      <div id="fb-root"></div>
+      <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <div class="fb-page" data-href="https://www.facebook.com/machi-ya.jp" data-width="385" data-height="160" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+        <div class="fb-xfbml-parse-ignore">
+          <blockquote cite="https://www.facebook.com/machi-ya.jp"> <a href="https://www.facebook.com/machi-ya.jp">machi-ya</a> </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- [/mcy-ft-top] -->
+  <!-- [mcy-ft-middle] -->
+  <div id="mcy-ft-middle">
+    <div class="mcy-ft-wrapper">
+      <div id="mcy-ft-mm">
+        <h3>MAIL MAGAZINE</h3>
+        <div>
+          <form id="module-signup-form" action="//machi-ya.jp/_/m/a5f895c8-a8a2-4379-8b77-8bcff1f393dc" method="post">
+            <div class="st-module-signup-inputs st-group"> <input type="text" id="module-signup-email" class="st-module-signup-input" name="email" placeholder="" value="" /> <a href="#" id="module-signup-submit" class="mcy-mm-btn">登録</a> </div>
+            <div class="js-module-signup-success js-module-signup-modal-message st-module-signup-success"
+              style="display:none">
+              <p></p>
+              <p>登録が完了しました！</p>
+              <p></p>
+            </div>
+            <div class="js-module-signup-error js-module-signup-modal-message st-module-signup-error" style="display:none"> この項目は必須です。 </div>
+          </form>
+        </div>
+      </div>
+      <div id="mcy-ft-logo"> <img src="https://d13ucm2atqlvn6.cloudfront.net/f9554b8f4b4043aa814d5b88db78c138/images/4cf431e259e648e7aa290052de0103aa.png" alt="" width="252" height="84" class="st-module-image-img" /> </div>
+      <div id="mcy-ft-sns">
+        <a href="https://www.facebook.com/machiya.jp" target="_blank"><img src="https://d2fjy7s54jcawp.cloudfront.net/machi-ya/facebook.png" width="45" height="45"></a>
+        <a href="https://twitter.com/machiya_mg" target="_blank"><img src="https://d2fjy7s54jcawp.cloudfront.net/machi-ya/twitter.png" width="45" height="45"></a>
+      </div>
+    </div>
+  </div>
+  <!-- [/mcy-ft-middle] -->
+  <!-- [mcy-ft-bottom] -->
+  <div id="mcy-ft-bottom">
+    <div class="mcy-ft-wrapper">
+      <div class="mcy-info"> <a href="http://machi-ya.jp/">TOP</a> <a href="http://www.mediagene.co.jp/corporate">企業情報</a> <a href="http://machi-ya.jp/contact">お問い合わせ</a> <a href="http://machi-ya.jp/terms">利用規約</a> <a href="http://machi-ya.jp/tokusho">特商法に基づく表示</a> <a href="http://machi-ya.jp/privacy">プライバシーポリシー</a>        </div>
+      <div class="mcy-powered">copyright (c) mediagene, Inc. All Rights Reserved.</div>
+    </div>
+  </div>
+  <!-- [/mcy-ft-bottom] -->
+  <!-- [go-to-top-bottom] -->
+  <div id="page-top">
+    <a href="#wrap"></a>
+  </div>
+  <script>
+    $(window).load(function() {
+      var topBtn = $('#page-top');
+      topBtn.hide();
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 300) {
+          topBtn.fadeIn();
+        } else {
+          topBtn.fadeOut();
+        }
+      });
+      topBtn.click(function() {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 500);
+        return false;
+      });
+    });
+  </script>
+</div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5840e423bec3b169"></script>
+<!-- [/footer] -->

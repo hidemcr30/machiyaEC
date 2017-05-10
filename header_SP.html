@@ -1,0 +1,385 @@
+<style>
+  @import url(https://dhdg4tktn3ydk.cloudfront.net/FontAwesome.css);
+  #mcy-m-hd-mypage,
+  #mcy-m-hd-search input,
+  .mcy-m-hd-menu-list,
+  body {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Lucida Grande", Verdana, "ＭＳ Ｐゴシック", sans-serif
+  }
+
+  body a,
+  body input:focus,
+  body textarea:focus {
+    outline: 0
+  }
+
+  body,
+  body input[type=button],
+  body input[type=submit],
+  body ol,
+  body ul,
+  html {
+    margin: 0
+  }
+
+  body,
+  html {
+    width: 100%
+  }
+
+  html {
+    padding: 0;
+    height: 100%
+  }
+
+  body {
+    padding: 0;
+    min-height: 100%;
+    word-wrap: break-word;
+    text-rendering: optimizespeed;
+    -moz-font-feature-settings: "liga" 0;
+    -moz-font-feature-settings: "liga=0";
+    -ms-font-feature-settings: "liga" 0;
+    -o-font-feature-settings: "liga" 0;
+    -webkit-font-feature-settings: "liga" 0;
+    font-feature-settings: "liga" 0
+  }
+
+  body::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(0, 0, 0, .1)
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .4)
+  }
+
+  body a {
+    text-decoration: none
+  }
+
+  body a:hover {
+    text-decoration: underline
+  }
+
+  body p {
+    margin: 0 0 10px
+  }
+
+  body p:last-child {
+    margin-bottom: 0
+  }
+
+  body ul {
+    padding: 0;
+    list-style: none
+  }
+
+  body ol {
+    padding: 0
+  }
+
+  body table,
+  body table td,
+  body table th {
+    border-collapse: collapse;
+    padding: 0
+  }
+
+  body img {
+    border: none;
+    max-width: 100%;
+    -ms-interpolation-mode: bicubic
+  }
+
+  body input,
+  body textarea {
+    outline: 0;
+    -moz-font-feature-settings: "liga" 0;
+    -moz-font-feature-settings: "liga=0";
+    -ms-font-feature-settings: "liga" 0;
+    -o-font-feature-settings: "liga" 0;
+    font-feature-settings: "liga" 0
+  }
+
+  body input[type=checkbox],
+  body input[type=radio] {
+    margin: 0;
+    padding: 0;
+    border: none
+  }
+
+  input::-webkit-input-placeholder {
+    line-height: normal
+  }
+
+  input::-moz-placeholder {
+    line-height: normal
+  }
+
+  input:-moz-placeholder {
+    line-height: normal
+  }
+
+  input:-ms-input-placeholder {
+    line-height: normal
+  }
+
+  body article,
+  body aside,
+  body footer,
+  body header,
+  body hgroup,
+  body nav,
+  body section {
+    display: block
+  }
+
+  #mcy-m-hd-top {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #000
+  }
+
+  .mcy-m-hd-wrapper {
+    margin: 0 auto;
+    width: 320px;
+    height: 50px;
+    position: relative
+  }
+
+  #mcy-m-hd-cart,
+  .mcy-m-hd-menu-icon {
+    width: 30px;
+    height: auto;
+    font-weight: 400;
+    bottom: 10px
+  }
+
+  .mcy-m-hd-menu-icon {
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    text-align: left;
+    color: #222
+  }
+
+  .mcy-m-hd-menu-list {
+    background-color: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 100;
+    top: 40px
+  }
+
+  .mcy-m-hd-menu-list li {
+    border-top: 1px solid #999;
+  }
+
+  .mcy-m-hd-menu-list a {
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    line-height: 24px;
+    padding: 10px 0;
+    color: #333;
+  }
+
+  .mcy-m-hd-menu-list a:hover {
+    color: #d7003a
+  }
+
+  #mcy-m-hd-cart a,
+  #mcy-m-hd-mypage a {
+    color: #222
+  }
+
+  #mcy-m-hd-logo {
+    position: absolute;
+    width: 200px;
+    height: 31px;
+    left: 60px;
+    bottom: 10px
+  }
+
+  #mcy-m-hd-cart {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    position: absolute;
+    right: 0
+  }
+
+  #mcy-m-hd-bottom {
+    width: 100%;
+    padding: 10px 0 6px;
+    border-bottom: 1px solid #000
+  }
+
+  .mcy-m-hd-bottom-wrapper {
+    margin: 0 auto;
+    width: 320px;
+    position: relative
+  }
+
+  #mcy-m-hd-search {
+    width: 280px;
+    height: 50px;
+    padding-top: 20px;
+  }
+
+  .mcy-m-hd-search-input-icon {
+    color: #999
+  }
+
+  #mcy-m-hd-search input {
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0;
+    font-feature-settings: "liga" off;
+    font-size: 12px;
+    word-wrap: break-word
+  }
+
+  .cse .gsc-control-cse,
+  .gsc-control-cse,
+  table.gsc-search-box td.gsc-input {
+    padding: 0
+  }
+
+  .gsc-search-button {
+    line-height: normal;
+  }
+
+  #___gcse_0 {
+    float: right;
+  }
+
+  .gsc-input-box {
+    border: 1px solid #999 !important;
+  }
+
+  .gsc-input-box-focus,
+  .gsc-input-box-hover {
+    box-shadow: none;
+  }
+
+  .gsib_b {
+    display: none;
+  }
+</style>
+<!-- [hd-top] -->
+<div id="mcy-m-hd-top">
+  <div class="mcy-m-hd-wrapper">
+    <!-- [menu] -->
+    <div class="mcy-m-hd-menu-icon"> <i class="icon-reorder"></i> </div>
+    <div class="mcy-m-hd-menu-list">
+      <div id="mcy-m-hd-search">
+        <gcse:search></gcse:search>
+      </div>
+      <ul>
+        <li> <a href="http://machi-ya.jp/about">ABOUT</a> </li>
+        <li> <a href="http://machi-ya.jp/media">MEDIA</a> </li>
+        <li> <a href="http://machi-ya.jp/stores">STORES</a> </li>
+        <li> <a href="http://machi-ya.jp/goods">GOODS</a> </li>
+        <li> <a href="http://machi-ya.jp/jobmatch">JOB MATCH</a> </li>
+        <li> <a href="https://cf.machi-ya.jp/">CROWDFUNDING</a> </li>
+        <li> <a href="http://machi-ya.jp/editors">EDITORS CHOICE</a> </li>
+        <li> <a href="http://machi-ya.jp/entry">ENTRY</a> </li>
+        <li> <a href="http://machi-ya.jp/account">MY PAGE</a> </li>
+      </ul>
+    </div>
+    <script>
+      $(function() {
+        $(".mcy-m-hd-menu-list").css("display", "none");
+        $(".mcy-m-hd-menu-icon").on("click", function() {
+          $(".mcy-m-hd-menu-list").slideToggle();
+        });
+      });
+    </script>
+    <!-- [/menu] -->
+    <!-- [logo] -->
+    <div id="mcy-m-hd-logo">
+      <a href="http://machi-ya.jp/"> <img src="https://d13ucm2atqlvn6.cloudfront.net/f9554b8f4b4043aa814d5b88db78c138/images/bc702fbec6c94cc0885f38bc2f58461d.png" alt="machi-ya_logo" width="200" height="31" /> </a>
+    </div>
+    <!-- [/logo] -->
+    <!-- [cart] -->
+    <div id="mcy-m-hd-cart">
+      <a href="https://machi-ya.jp/cart"> <i class="icon-shopping-cart"></i> </a>
+    </div>
+    <!-- [/cart] -->
+  </div>
+</div>
+<!-- [/hd-top] -->
+<script>
+  (function() {
+    var cx = '010402023890536970566:gds7o7lyltq';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+  function marketplaceSignupHandler(e) {
+    e.preventDefault();
+    var global = require('goodsie.global');
+    var $success = $('.js-module-signup-success').hide();
+    var $error = $('.js-module-signup-error').hide();
+    var $email = $('#module-signup-email');
+    var $form = $('#module-signup-form');
+    $.ajax({
+      type: "POST",
+      url: $form.attr('action'),
+      data: {
+        email: $email.val(),
+        csrfmiddlewaretoken: global.csrftoken
+      },
+      dataType: "json",
+      xhrFields: {
+        withCredentials: true
+      },
+      success: function(resp, status, xhr) {
+        $success.html(resp.data.success).show();
+      },
+      error: function(xhr, status, error) {
+        try {
+          resp = $.parseJSON(xhr.responseText);
+          $error.html(resp.form.errors.email).show();
+        } catch (e) {}
+      },
+      beforeSend: function(jxhr, settings) {
+        jxhr.setRequestHeader("X-CSRFToken", global.csrftoken);
+      }
+    });
+  }
+  document.addEventListener('click', function(e) {
+    if (!$ || e.target.id != 'module-signup-submit') {
+      return
+    }
+    return marketplaceSignupHandler(e);
+  });
+  document.addEventListener('keypress', function(e) {
+    if (!$ || e.target.id != 'module-signup-email' || e.keyCode != 13) {
+      return
+    }
+    return marketplaceSignupHandler(e);
+  });
+</script>
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'ja',
+      includedLanguages: 'en,zh-CN,zh-TW',
+      layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT,
+      multilanguagePage: true
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
