@@ -272,6 +272,18 @@
     display: none;
   }
 </style>
+
+
+<!-- [menu toggle] -->
+<script>
+  $(function() {
+    $(".mcy-m-hd-menu-list").css("display", "none");
+    $(".mcy-m-hd-menu-icon").on("click", function() {
+      $(".mcy-m-hd-menu-list").slideToggle();
+    });
+  });
+</script>
+
 <!-- [hd-top] -->
 <div id="mcy-m-hd-top">
   <div class="mcy-m-hd-wrapper">
@@ -288,19 +300,11 @@
         <li> <a href="http://machi-ya.jp/goods">GOODS</a> </li>
         <li> <a href="http://machi-ya.jp/jobmatch">JOB MATCH</a> </li>
         <li> <a href="https://cf.machi-ya.jp/">CROWDFUNDING</a> </li>
-        <li> <a href="http://machi-ya.jp/editors">EDITORS CHOICE</a> </li>
         <li> <a href="http://machi-ya.jp/entry">ENTRY</a> </li>
         <li> <a href="http://machi-ya.jp/account">MY PAGE</a> </li>
       </ul>
     </div>
-    <script>
-      $(function() {
-        $(".mcy-m-hd-menu-list").css("display", "none");
-        $(".mcy-m-hd-menu-icon").on("click", function() {
-          $(".mcy-m-hd-menu-list").slideToggle();
-        });
-      });
-    </script>
+
     <!-- [/menu] -->
     <!-- [logo] -->
     <div id="mcy-m-hd-logo">
@@ -316,16 +320,6 @@
 </div>
 <!-- [/hd-top] -->
 <script>
-  (function() {
-    var cx = '010402023890536970566:gds7o7lyltq';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-
   function marketplaceSignupHandler(e) {
     e.preventDefault();
     var global = require('goodsie.global');
@@ -372,14 +366,5 @@
   });
 </script>
 
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'ja',
-      includedLanguages: 'en,zh-CN,zh-TW',
-      layout: google.translate.TranslateElement.FloatPosition.BOTTOM_RIGHT,
-      autoDisplay: true
-    }, 'google_translate_element');
-  }
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- WOVN Translate -->
+<script src="//j.wovn.io/1" data-wovnio="key=cwSvr5" async></script>
